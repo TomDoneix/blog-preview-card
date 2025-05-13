@@ -55,5 +55,4 @@ clamp()
 
 ## Author :
 
-TODO À changer !
-- Frontend Mentor - [@olivierdenoix](https://www.frontendmentor.io/profile/OlivierDenoix)
+- Frontend Mentor - [@TomDoneix](https://www.frontendmentor.io/profile/TomDoneix)
