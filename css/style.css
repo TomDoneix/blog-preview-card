@@ -1,0 +1,116 @@
+@import url(/css/new-css-reset.css);
+@font-face {
+  font-family: Figtree;
+  src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+:root {
+  --color__gray950: #111111;
+  --color__white: #ffffff;
+  --color__yellow: #f4d04e;
+  --color__gray500: #6b6b6b;
+  --spacing__50: 4px;
+  --spacing__100: 8px;
+  --spacing__150: clamp(2px, 3vw, 12px);
+  --spacing__200: clamp(8px, 5vw, 24px);
+  --fontsize__textpreset1: clamp(1.25rem, 5.2vw, 1.5rem);
+  --fontsize__textpreset2: clamp(0.75rem, 3.47vw, 1rem);
+  --fontsize__textpreset3: clamp(0.75rem, 3.02vw, 0.875rem);
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--color__yellow);
+  font-family: Figtree, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--color__gray950);
+  padding: 0 var(--spacing__200);
+}
+
+.card {
+  max-width: 384px;
+  display: grid;
+  row-gap: var(--spacing__200);
+  padding: var(--spacing__200);
+  border-radius: 20px;
+  background: var(--color__white);
+  border: 1px solid var(--color__gray950);
+  box-shadow: 8px 8px 0 black;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.card--illustration {
+  width: 336px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card--content {
+  display: grid;
+  row-gap: var(--spacing__150);
+}
+
+.card--learning {
+  font-size: var(--fontsize__textpreset3);
+  font-weight: 800;
+  background: var(--color__yellow);
+  place-self: start;
+  padding: var(--spacing__50) var(--spacing__150);
+  border-radius: 4px;
+}
+
+.card--meta {
+  font-weight: 500;
+  font-size: var(--fontsize__textpreset3);
+}
+
+.card--title {
+  font-size: var(--fontsize__textpreset1);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.card--extait {
+  font-size: var(--fontsize__textpreset2);
+  font-weight: 400;
+  color: var(--color__gray500);
+}
+
+.card--author {
+  display: flex;
+  place-items: center start;
+  gap: var(--spacing__150);
+}
+
+.card--author-img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.card--author-name {
+  font-size: var(--fontsize__textpreset3);
+  font-weight: 800;
+}
+
+/* hover */
+
+.card:hover {
+  box-shadow: 4px 4px 0 black;
+  transition: box-shadow 150ms;
+}
+
+.card:active {
+    box-shadow: 8px 8px 0 black;
+}
+
+.card:hover .card--title {
+  color: var(--color__yellow);
+  transition: color 150ms;
+}
+
+.card:active .card--title {
+    color: var(--color__gray950);
+}
