@@ -29,8 +29,7 @@ Users should be able to:
 
 ### Links
 
-TODO À changer !
-- Live Site URL: [blog-preview-card](https://blog-preview-card-chi-gray.vercel.app/)
+- Live Site URL: [blog-preview-card](https://blog-preview-card-theta-jet.vercel.app/)
 
 ## My process
 
